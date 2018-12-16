@@ -8,4 +8,4 @@ meals = ["kerkyra", "corvin sushi", "bamba marha", "thai"]
 def meal():
     return render_template("main.html", meal=random.choice(meals))
 
-app.run()
+app.run(port=80, host="0.0.0.0")
